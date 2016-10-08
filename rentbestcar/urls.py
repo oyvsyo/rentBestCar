@@ -3,7 +3,7 @@ from django.contrib import admin
 from settings import STATIC_ROOT
 
 urlpatterns = [
-    url(r'^$', 'app.views.home', name='home'),
+    url(r'^$', 'app.views.index', name='index'),
     url(r'^admin/', include(admin.site.urls)),
 ]
 

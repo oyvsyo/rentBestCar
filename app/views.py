@@ -1,7 +1,7 @@
 # from django.shortcuts import render
 from django.http import JsonResponse
+from django.shortcuts import render
 
 
-def home(request):
-    return JsonResponse({'You are welcome to ': 'RENTBESTCAR 1.0'})
-
+def index(request):
+    return render(request, "index.html", {"test": "test2"})
