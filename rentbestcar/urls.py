@@ -1,6 +1,8 @@
 from django.conf.urls import include, url, patterns
 from django.contrib import admin
-from settings import STATIC_ROOT
+from django.conf.urls.static import static
+from django.conf import settings
+from settings import STATIC_ROOT, MEDIA_ROOT, MEDIA_URL
 from tastypie.api import Api
 from app.api import *
 
@@ -34,3 +36,5 @@ urlpatterns = [
 
 urlpatterns += patterns('', (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': STATIC_ROOT}), )
 
+# urlpatterns += staticfiles_urlpatterns()
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

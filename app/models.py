@@ -48,3 +48,9 @@ class Transaction(models.Model):
 
     def __unicode__(self):
         return unicode(self.id)
+
+
+class CarGallery(models.Model):
+    image_description = models.CharField(default='image', max_length=100)
+    image = models.ImageField(upload_to='cargallery/', max_length=1024, default='')
+    car_id = models.ForeignKey(Car)
