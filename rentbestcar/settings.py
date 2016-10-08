@@ -125,11 +125,11 @@ CELERYBEAT_SCHEDULE = {
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join("static/")
-# STATICFILES_DIRS = (
-#     # os.path.join(BASE_DIR, "static_in_pro", "our_static"),
-#     # os.path.join(BASE_DIR, "app", "static"),
-#     # '/var/www/static/',
-# )
+STATICFILES_DIRS = (
+    # os.path.join(BASE_DIR, "static_in_pro", "our_static"),
+    # os.path.join(BASE_DIR, "app", "static"),
+    # '/var/www/static/',
+)
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
