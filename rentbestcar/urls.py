@@ -23,6 +23,11 @@ urlpatterns = [
     url(r'^renter-profile-edit$', 'app.views.renter_profile_edit', name='renter_profile_edit'),
     url(r'^transaction$', 'app.views.transaction', name='transaction'),
 
+    # auth
+    url(r'^login', 'app.views.login', name='login'),
+    url(r'^registration', 'app.views.registration', name='registration'),
+    url(r'^forgot_password', 'app.views.forgot_password', name='forgot_password'),
+
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api/', include(v1_api.urls)),
 ]

@@ -43,3 +43,17 @@ def car_list(request):
 def transaction(request):
     context = {}
     return render(request, "transaction.html", context)
+
+#     auth
+
+def login(request):
+    context = {}
+    return render(request, "auth/login.html", context)
+
+def registration(request):
+    context = {}
+    return render(request, "auth/registration.html", context)
+
+def forgot_password(request):
+    context = {}
+    return render(request, "auth/forgot_password.html", context)
