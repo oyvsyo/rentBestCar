@@ -1,0 +1,21 @@
+django:
+  build: .
+  command: "sh deploy.sh"
+  environment:
+    RUN_ENV: "$RUN_ENV"
+    SCHEDUL_DB_PASS: "$SCHEDUL_DB_PASS"
+    SCHEDUL_DB_HOST: "$SCHEDUL_DB_HOST"
+    SCHEDUL_SENTRY_URL: "$SCHEDUL_SENTRY_URL"
+    RABBITMQ_DEFAULT_USER: "$RABBITMQ_DEFAULT_USER"
+    RABBITMQ_DEFAULT_PASS: "$RABBITMQ_DEFAULT_PASS"
+    RABBITMQ_HOST: "$RABBITMQ_HOST"
+
+  ports:
+   - "80:8001"
+  volumes:
+   - .:/project
+  links:
+   - redis
+redis:
+  image: redis:latest
+  command: redis-server --appendonly yes

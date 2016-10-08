@@ -1,0 +1,25 @@
+django_stage:
+  build: .
+  command: "sh deploy.sh"
+  environment:
+    RUN_ENV: "STAGE"
+    SCHEDUL_SENTRY_URL: "$SCHEDUL_SENTRY_URL"
+    RABBITMQ_DEFAULT_USER: "$RABBITMQ_DEFAULT_USER"
+    RABBITMQ_DEFAULT_PASS: "$RABBITMQ_DEFAULT_PASS"
+  ports:
+   - "8080:8001"
+  volumes:
+   - .:/project
+  links:
+   - redis_stage
+   - postgres_stage
+redis_stage:
+  image: redis:latest
+  command: redis-server --appendonly yes
+postgres_stage:
+  image: postgres:9.4
+  volumes:
+    - stage_postgres_9_4:/var/lib/postgresql/data
+  environment:
+    POSTGRES_PASSWORD: "scheduling_stage"
+    POSTGRES_USER: "scheduling_stage"

@@ -1,0 +1,26 @@
+django_dev:
+  build: .
+  command: "sh deploy.sh"
+  environment:
+    RUN_ENV: "DEV"
+    RABBITMQ_DEFAULT_USER: "$RABBITMQ_DEFAULT_USER"
+    RABBITMQ_DEFAULT_PASS: "$RABBITMQ_DEFAULT_PASS"
+  ports:
+   - "80:8001"
+  volumes:
+   - .:/project
+  links:
+   - redis_dev
+   - postgres_dev
+redis_dev:
+  image: redis:latest
+  command: redis-server --appendonly yes
+postgres_dev:
+  image: postgres:9.4
+  volumes:
+    - local_postgres_9_4:/var/lib/postgresql/data
+  ports:
+   - "5432:5432"
+  environment:
+    POSTGRES_PASSWORD: "scheduling_dev"
+    POSTGRES_USER: "scheduling_dev"
