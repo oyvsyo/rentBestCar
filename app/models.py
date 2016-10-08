@@ -33,6 +33,7 @@ class Car(models.Model):
     owner = models.ForeignKey(Owner)
     name = models.CharField(max_length=1024)
     price = models.IntegerField(default=30)
+    short_description = models.CharField(max_length=200, default='short_description')
     description = models.CharField(max_length=5048)
     manufacture = models.IntegerField(default=2000)
 

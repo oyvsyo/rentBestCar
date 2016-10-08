@@ -398,7 +398,7 @@
                                 <div class="product-name"> {{ car.name }} </div>
 
                                 <div class="small m-t-xs">
-                                    {{ car.description }}
+                                    {% autoescape off %} {{ car.short_description | truncatechars:100 }} {% endautoescape %}
                                 </div>
                                 <div class="m-t text-righ">
 
