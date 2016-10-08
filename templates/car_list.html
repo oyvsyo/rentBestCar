@@ -258,7 +258,7 @@
                     <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
                     <form role="search" class="navbar-form-custom" action="#">
                         <div class="form-group">
-                            <input type="text" placeholder="Search for something..." class="form-control" name="search" id="top-search">
+                            <input type="text" placeholder={% if search %}{{ search }} {% else %} 'Search' {% endif %}class="form-control" name="search" id="top-search">
                         </div>
                     </form>
                 </div>
@@ -405,7 +405,7 @@
                                 <span class="product-price">
                                     $10
                                 </span>
-                                <small class="text-muted">{{ car.name }} </small>
+                                <small class="text-muted">{{ car.owner.user.username }} </small>
                                 <a href="#" class="product-name"> {{ car.name }} </a>
 
                                 <div class="small m-t-xs">

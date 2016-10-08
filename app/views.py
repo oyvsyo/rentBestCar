@@ -41,7 +41,8 @@ def car_list(request):
     if request.method == 'GET':
         search = request.GET.get('search', '')
         print 'searfch', search
-        context = {"cars": Car.objects.filter(description__icontains=search)}
+        context = {"cars": Car.objects.filter(description__icontains=search),
+        "search": search}
     return render(request, "car_list.html", context)
 
 
