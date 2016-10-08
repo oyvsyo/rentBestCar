@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee4e22c3-96cd-49db-95e2-239ca8bd4bde" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mapexample/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mapexample/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mapexample/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/owner_profile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/owner_profile_edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/renter_profile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/renter_profile_edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views.py" afterPath="$PROJECT_DIR$/app/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/celerybeat-schedule" afterPath="$PROJECT_DIR$/celerybeat-schedule" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose.dev.yml" afterPath="$PROJECT_DIR$/docker-compose.dev.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rentbestcar/settings.py" afterPath="$PROJECT_DIR$/rentbestcar/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rentbestcar/urls.py" afterPath="$PROJECT_DIR$/rentbestcar/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/supervisord.log" afterPath="$PROJECT_DIR$/supervisord.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/supervisord.pid" afterPath="$PROJECT_DIR$/supervisord.pid" />
     </list>
     <ignored path="rentBestCar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/rentbestcar/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="87" column="36" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
+              <caret line="86" column="34" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -577,7 +588,7 @@
     <entry file="file://$PROJECT_DIR$/rentbestcar/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="87" column="36" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
+          <caret line="86" column="34" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
           <folding />
         </state>
       </provider>

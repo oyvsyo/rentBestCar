@@ -13,7 +13,7 @@ v1_api.register(CarResource())
 v1_api.register(TransactionResource())
 
 urlpatterns = [
-    url(r'^$', 'app.views.home', name='home'),
+    url(r'^$', 'app.views.index', name='index'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api/', include(v1_api.urls)),
 ]
