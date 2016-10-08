@@ -2,5 +2,6 @@
 celerybeat-schedule
 *.pyc
 *.log
+*.pid
 products_WB0R5L90S_inspinia_v2.5/
 static/
