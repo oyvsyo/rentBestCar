@@ -14,7 +14,7 @@ v1_api.register(TransactionResource())
 
 urlpatterns = [
     url(r'^$', 'app.views.index', name='index'),
-    url(r'^car$', 'app.views.car', name='car'),
+    url(r'^car/(?P<car_id>\d+)/$', 'app.views.car', name='car'),
     url(r'^car-edit/(?P<id>[0-9]+)/$', 'app.views.car_edit', name='car_edit'),
     url(r'^car-list$', 'app.views.car_list', name='car_list'),
     url(r'^owner-profile$', 'app.views.owner_profile', name='owner_profile'),
