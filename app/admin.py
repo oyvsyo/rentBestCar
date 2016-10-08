@@ -25,6 +25,7 @@ class TransactionAdmin(admin.ModelAdmin):
     form = TransactionForm
 
 admin.site.register(UserProfile, UserProfileAdmin)
+admin.site.register(Car, CarAdmin)
 admin.site.register(Owner, OwnerAdmin)
 admin.site.register(Renter, RenterAdmin)
 admin.site.register(Transaction, TransactionAdmin)
