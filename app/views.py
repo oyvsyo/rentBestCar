@@ -27,7 +27,7 @@ def renter_profile_edit(request):
     return render(request, "renter_profile_edit.html", context)
 
 
-def car(request):
+def car(request, car_id):
     context = {}
     return render(request, "car.html", context)
 
