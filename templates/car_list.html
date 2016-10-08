@@ -406,15 +406,14 @@
                                     $10
                                 </span>
                                 <small class="text-muted">{{ car.name }} </small>
-                                <a href="#" class="product-name"> Product</a>
-
+                                <a href="#" class="product-name"> {{ car.name }} </a>
 
                                 <div class="small m-t-xs">
                                     {{ car.description }}
                                 </div>
                                 <div class="m-t text-righ">
 
-                                    <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+                                    <a href="/car/{{ car.id }}/" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
                                 </div>
                             </div>
                         </div>
