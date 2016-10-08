@@ -83,9 +83,9 @@ WSGI_APPLICATION = 'scheduling.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'scheduling_dev',
-        'USER': 'scheduling_dev',
-        'PASSWORD': 'scheduling_dev',
+        'NAME': 'rentbestcar_dev',
+        'USER': 'rentbestcar_dev',
+        'PASSWORD': 'rentbestcar_dev',
         'HOST': 'postgres_dev',
         'PORT': '5432',
         'unicode_results': True,

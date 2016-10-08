@@ -18,9 +18,9 @@ redis_dev:
 postgres_dev:
   image: postgres:9.4
   volumes:
-    - local_postgres_9_4:/var/lib/postgresql/data
+    - rentbestcar_postgres_volume:/var/lib/postgresql/data
   ports:
    - "5432:5432"
   environment:
-    POSTGRES_PASSWORD: "scheduling_dev"
-    POSTGRES_USER: "scheduling_dev"
+    POSTGRES_PASSWORD: "rentbestcar_dev"
+    POSTGRES_USER: "rentbestcar_dev"

@@ -9,3 +9,9 @@
 2016-10-07 10:11:33,547 CRIT Supervisor running as root (no user in config file)
 2016-10-08 11:30:07,157 CRIT Supervisor running as root (no user in config file)
 2016-10-08 11:31:15,520 CRIT Supervisor running as root (no user in config file)
+2016-10-08 12:41:32,282 CRIT Supervisor running as root (no user in config file)
+2016-10-08 12:43:14,271 CRIT Supervisor running as root (no user in config file)
+2016-10-08 12:45:58,305 WARN killing 'schedule_gunicorn' (81) with SIGKILL
+2016-10-08 12:47:13,017 CRIT Supervisor running as root (no user in config file)
+2016-10-08 12:48:54,180 CRIT Supervisor running as root (no user in config file)
+2016-10-08 12:49:37,733 CRIT Supervisor running as root (no user in config file)
