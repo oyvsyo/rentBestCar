@@ -4,20 +4,42 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, "index.html", {"test": "test2"})
-
+    context = {}
+    return render(request, "index.html", context)
 
 def owner_profile(request):
-    return render(request, "index.html", {"test": "test2"})
+    context = {}
+    return render(request, "owner_profile.html", context)
 
 
 def owner_profile_edit(request):
-    return render(request, "index.html", {"test": "test2"})
+    context = {}
+    return render(request, "owner_profile_edit.html", context)
 
 
 def renter_profile(request):
-    return render(request, "index.html", {"test": "test2"})
+    context = {}
+    return render(request, "renter_profile.html", context)
 
 
 def renter_profile_edit(request):
-    return render(request, "index.html", {"test": "test2"})
+    context = {}
+    return render(request, "renter_profile_edit.html", context)
+
+
+def car(request):
+    context = {}
+    return render(request, "car.html", context)
+
+
+def car_edit(request):
+    context = {}
+    return render(request, "car_edit.html", context)
+
+def car_list(request):
+    context = {}
+    return render(request, "car_list.html", context)
+
+def transaction(request):
+    context = {}
+    return render(request, "transaction.html", context)
