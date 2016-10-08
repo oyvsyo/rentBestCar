@@ -1,7 +1,7 @@
 # from django.shortcuts import render
 from django.http import JsonResponse
 from django.shortcuts import render
-
+from app.models import Car
 
 def index(request):
     context = {}
@@ -36,9 +36,14 @@ def car_edit(request):
     context = {}
     return render(request, "car_edit.html", context)
 
+
 def car_list(request):
-    context = {}
+    if request.method == 'GET':
+        search = request.GET.get('search', '')
+        print 'searfch', search
+        context = {"cars": Car.objects.filter(description__icontains=search)}
     return render(request, "car_list.html", context)
+
 
 def transaction(request):
     context = {}
