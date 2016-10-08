@@ -2,6 +2,8 @@
 from django.http import JsonResponse
 from django.shortcuts import render
 
+from app.models import Car
+
 
 def index(request):
     context = {}
@@ -32,8 +34,8 @@ def car(request):
     return render(request, "car.html", context)
 
 
-def car_edit(request):
-    context = {}
+def car_edit(request, id):
+    context = {'car': Car.objects.get(id=id)}
     return render(request, "car_edit.html", context)
 
 def car_list(request):

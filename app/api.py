@@ -75,7 +75,7 @@ class RenterResource(ModelResource):
         authorization = Authorization()
 
 class CarResource(ModelResource):
-    user = fields.ForeignKey(UserResource, 'user')
+    # user = fields.ForeignKey(UserResource, 'user')
 
     class Meta:
         queryset = Car.objects.all()
@@ -83,9 +83,9 @@ class CarResource(ModelResource):
         # excludes = ['email', 'password', 'is_active', 'is_staff', 'is_superuser']
         # fields = ['id', 'last_login']
         # allowed_methods = ['get']
-        filtering = {
-            'user': ALL_WITH_RELATIONS,
-        }
+        # filtering = {
+        #     'user': ALL_WITH_RELATIONS,
+        # }
         always_return_data = True
         authorization = Authorization()
 

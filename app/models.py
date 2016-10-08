@@ -32,7 +32,8 @@ class Renter(UserProfile):
 class Car(models.Model):
     owner = models.ForeignKey(Owner)
     name = models.CharField(max_length=1024)
-    description = models.CharField(max_length=2048)
+    price = models.IntegerField(default=30)
+    description = models.CharField(max_length=5048)
 
     def __unicode__(self):
         return unicode(self.id)

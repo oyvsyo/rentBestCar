@@ -16,7 +16,7 @@ class RenterAdmin(admin.ModelAdmin):
     form = RenterForm
 
 class CarAdmin(admin.ModelAdmin):
-    list_display = ['id']
+    list_display = ['id', 'price', 'description']
     form = CarForm
 
 
