@@ -28,13 +28,14 @@ def renter_profile_edit(request):
 
 
 def car(request, car_id):
-    context = {}
+    context = {'car': Car.objects.get(id=car_id)}
     return render(request, "car.html", context)
 
 
 def car_edit(request, id):
     context = {'car': Car.objects.get(id=id)}
     return render(request, "car_edit.html", context)
+
 
 def car_list(request):
     if request.method == 'GET':
@@ -43,6 +44,7 @@ def car_list(request):
         context = {"cars": Car.objects.filter(description__icontains=search),
         "search": search}
     return render(request, "car_list.html", context)
+
 
 def transaction(request):
     context = {}

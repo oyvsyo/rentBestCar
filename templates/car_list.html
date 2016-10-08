@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | E-commerce</title>
+    <title> rentBestCar search </title>
 
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -264,7 +264,7 @@
                 </div>
                 <ul class="nav navbar-top-links navbar-right">
                     <li>
-                        <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
+                        <span class="m-r-sm text-muted welcome-message"> Welcome {{ user.username }} </span>
                     </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
@@ -374,18 +374,7 @@
         </div>
         <div class="row wrapper border-bottom white-bg page-heading">
             <div class="col-lg-10">
-                <h2>E-commerce grid</h2>
-                <ol class="breadcrumb">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a>E-commerce</a>
-                    </li>
-                    <li class="active">
-                        <strong>Products grid</strong>
-                    </li>
-                </ol>
+                <h2>Car searching</h2>
             </div>
             <div class="col-lg-2">
 
@@ -406,7 +395,7 @@
                                     $10
                                 </span>
                                 <small class="text-muted">{{ car.owner.user.username }} </small>
-                                <a href="#" class="product-name"> {{ car.name }} </a>
+                                <div class="product-name"> {{ car.name }} </div>
 
                                 <div class="small m-t-xs">
                                     {{ car.description }}
@@ -423,7 +412,8 @@
             </div>
         </div>
         <div class="footer">
-            <div class="pull-right">
+            <div>
+            &copy; 2016 rentBestCar
             </div>
             <div>
             </div>
