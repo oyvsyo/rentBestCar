@@ -34,6 +34,7 @@ class Car(models.Model):
     name = models.CharField(max_length=1024)
     price = models.IntegerField(default=30)
     description = models.CharField(max_length=5048)
+    manufacture = models.IntegerField(default=2000)
 
     def __unicode__(self):
         return unicode(self.id)
