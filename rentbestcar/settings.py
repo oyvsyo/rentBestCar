@@ -131,6 +131,9 @@ STATICFILES_DIRS = (
     # '/var/www/static/',
 )
 
+MEDIA_ROOT = os.path.join("media/")
+MEDIA_URL = '/media/'
+
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',

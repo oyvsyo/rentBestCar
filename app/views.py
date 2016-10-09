@@ -1,7 +1,7 @@
 # from django.shortcuts import render
 from django.http import JsonResponse
 from django.shortcuts import render
-from app.models import Car
+from app.models import Car, CarGallery
 
 def index(request):
     context = {}
@@ -28,7 +28,13 @@ def renter_profile_edit(request):
 
 
 def car(request, car_id):
-    context = {'car': Car.objects.get(id=car_id)}
+    try:
+       images = CarGallery.objects.get(id=car_id)
+    except CarGallery.DoesNotExist:
+       images = None
+    context = {'car': Car.objects.get(id=car_id),
+               'images': images.image}
+    print(images)
     return render(request, "car.html", context)
 
 

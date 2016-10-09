@@ -24,6 +24,13 @@ class TransactionAdmin(admin.ModelAdmin):
     list_display = ['id']
     form = TransactionForm
 
+
+class CarGalleryAdmin(admin.ModelAdmin):
+    list_display = ['id']
+    form = TransactionForm
+
+
+admin.site.register(CarGallery, CarGalleryAdmin)
 admin.site.register(UserProfile, UserProfileAdmin)
 admin.site.register(Car, CarAdmin)
 admin.site.register(Owner, OwnerAdmin)
