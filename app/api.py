@@ -59,6 +59,7 @@ class OwnerResource(ModelResource):
         always_return_data = True
         authorization = Authorization()
 
+
 class RenterResource(ModelResource):
     user = fields.ForeignKey(UserResource, 'user')
 
@@ -74,6 +75,7 @@ class RenterResource(ModelResource):
         always_return_data = True
         authorization = Authorization()
 
+
 class CarResource(ModelResource):
     # user = fields.ForeignKey(UserResource, 'user')
 
@@ -88,6 +90,7 @@ class CarResource(ModelResource):
         # }
         always_return_data = True
         authorization = Authorization()
+
 
 class TransactionResource(ModelResource):
     user = fields.ForeignKey(UserResource, 'user')

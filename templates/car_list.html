@@ -392,13 +392,13 @@
                             </div>
                             <div class="product-desc">
                                 <span class="product-price">
-                                    $10
+                                    ${{ car.price }}
                                 </span>
                                 <small class="text-muted">{{ car.owner.user.username }} </small>
                                 <div class="product-name"> {{ car.name }} </div>
 
                                 <div class="small m-t-xs">
-                                    {{ car.description }}
+                                    {% autoescape off %} {{ car.short_description | truncatechars:100 }} {% endautoescape %}
                                 </div>
                                 <div class="m-t text-righ">
 
