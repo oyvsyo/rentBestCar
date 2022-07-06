@@ -15,7 +15,7 @@ django-extensions==1.6.1
 django-supervisor==0.3.2
 django-tastypie==0.12.2
 gunicorn==19.3.0
-html5lib==0.999
+html5lib==0.999999999
 kombu==3.0.32
 meld3==1.0.2
 pathtools==0.1.2
